@@ -16,3 +16,8 @@ dependencies = [
     "strands-agents-tools>=0.2.21",
     "urllib3>=2.6.3",
 ]
+
+[tool.uv]
+override-dependencies = [
+    "pywin32; sys_platform == 'win32'"
+]
